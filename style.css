@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f0f14;
+  color: #e0e0e0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#play {
+  background: none;
+  border: none;
+  font-size: 0.9rem;
+  color: #7a7a7a;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  padding: 0.5rem 0;
+  min-height: 44px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#play:hover {
+  color: #e0e0e0;
+}
+
+.statement {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #9a9a9a;
+  max-width: 420px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+}
+
+.work {
+  margin-top: 8rem;
+  max-width: 420px;
+}
+
+.work h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+}
+
+.year {
+  display: block;
+  font-size: 0.8rem;
+  color: #999;
+  margin-bottom: 1.5rem;
+}
+
+.work-note {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.work-links {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.work-links a {
+  color: #9a9a9a;
+}
+
+.work-links a:hover {
+  color: #e0e0e0;
+}
+
+.work-links span {
+  color: #666;
+  margin: 0 0.35rem;
+}
+
+@media (max-width: 700px) {
+  .page {
+    padding: 3rem 1.25rem;
+  }
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  .gallery img {
+    max-width: 100%;
+  }
+  .work-links a {
+    display: inline-block;
+    padding: 0.25rem 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .page {
+    padding: 2rem 1rem;
+  }
+}
+
+/* EPK page */
+.epk {
+  max-width: 650px;
+  margin: 6rem auto;
+  padding: 0 1.5rem;
+}
+
+.epk-cover {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.epk h1 {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.epk .tagline {
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.epk section {
+  margin-bottom: 3rem;
+}
+
+.epk h2 {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.epk ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.epk li {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 700px) {
+  .epk {
+    margin: 3rem auto;
+    padding: 0 1.25rem;
+  }
+}
