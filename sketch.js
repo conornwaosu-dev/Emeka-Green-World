@@ -36,33 +36,52 @@ function setup() {
 
   const playBtn = document.getElementById('play');
   const fallbackAudio = document.getElementById('audio-fallback');
-  if (playBtn) {
-    playBtn.addEventListener('click', function () {
-      if (song && song.isPlaying()) {
-        song.pause();
-        playBtn.textContent = 'listen';
-        return;
-      }
-      if (fallbackAudio && !fallbackAudio.paused) {
-        fallbackAudio.pause();
-        playBtn.textContent = 'listen';
-        return;
-      }
-      if (song && song.isLoaded()) {
-        song.loop();
+  var isMobile = ('ontouchstart' in window) || (window.innerWidth <= 768);
+
+  function tryPlay() {
+    if (song && song.isPlaying()) {
+      song.pause();
+      playBtn.textContent = 'listen';
+      return;
+    }
+    if (fallbackAudio && !fallbackAudio.paused) {
+      fallbackAudio.pause();
+      playBtn.textContent = 'listen';
+      return;
+    }
+    if (!isMobile && song && song.isLoaded()) {
+      try {
+        if (typeof getAudioContext !== 'undefined' && getAudioContext().state === 'suspended') {
+          getAudioContext().resume();
+        }
+      } catch (e) {}
+      song.loop();
+      started = true;
+      playBtn.textContent = 'pause';
+      return;
+    }
+    if (fallbackAudio) {
+      fallbackAudio.play().then(function () {
         started = true;
         playBtn.textContent = 'pause';
-        return;
-      }
-      if (fallbackAudio) {
-        fallbackAudio.play().then(function () {
-          started = true;
-          playBtn.textContent = 'pause';
-        }).catch(function () {
-          playBtn.textContent = 'Click to play (or use a local server)';
-        });
-      }
-    });
+      }).catch(function () {
+        playBtn.textContent = 'Tap to play';
+      });
+      return;
+    }
+    if (song && song.isLoaded()) {
+      song.loop();
+      started = true;
+      playBtn.textContent = 'pause';
+    }
+  }
+
+  if (playBtn) {
+    playBtn.addEventListener('click', tryPlay);
+    playBtn.addEventListener('touchend', function (e) {
+      e.preventDefault();
+      tryPlay();
+    }, { passive: false });
   }
 }
 
