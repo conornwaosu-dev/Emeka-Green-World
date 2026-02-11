@@ -61,12 +61,19 @@ function setup() {
       return;
     }
     if (fallbackAudio) {
-      fallbackAudio.play().then(function () {
+      fallbackAudio.volume = 1;
+      var p = fallbackAudio.play();
+      if (p && p.then) {
+        p.then(function () {
+          started = true;
+          playBtn.textContent = 'pause';
+        }).catch(function () {
+          playBtn.textContent = 'Tap to play';
+        });
+      } else {
         started = true;
         playBtn.textContent = 'pause';
-      }).catch(function () {
-        playBtn.textContent = 'Tap to play';
-      });
+      }
       return;
     }
     if (song && song.isLoaded()) {
