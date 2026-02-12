@@ -201,6 +201,14 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.epk a {
+  color: #8ba4be;
+}
+
+.epk a:hover {
+  color: #b0cce8;
+}
+
 @media (max-width: 700px) {
   .epk {
     margin: 3rem auto;
