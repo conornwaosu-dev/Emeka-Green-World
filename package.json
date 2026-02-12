@@ -1,0 +1,10 @@
+{
+  "name": "emeka-green-world",
+  "version": "1.0.0",
+  "description": "Emeka Green — music and EPK site",
+  "private": true,
+  "scripts": {
+    "build": "echo 'Static site — no build step'",
+    "start": "npx --yes serve . -p 3000"
+  }
+}
