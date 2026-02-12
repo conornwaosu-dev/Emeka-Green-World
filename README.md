@@ -1,10 +1,7 @@
 # Emeka Green World
 
-**Live site (click to open on phone or laptop):**  
-[**Open main site →**](https://conornwaosu-dev.github.io/Emeka-Green-World/)
-
-**EPK page:**  
-[**Open EPK →**](https://conornwaosu-dev.github.io/Emeka-Green-World/epk.html)
+**Live site:** [**emekagreen.com**](https://www.emekagreen.com)  
+**EPK (press kit):** [**emekagreen.com/epk.html**](https://www.emekagreen.com/epk.html)
 
 *If you only see “Emeka Green World” and a bit of text, you’re on the GitHub repo page. Use the links above to see the real site (cover image, listen button, gallery).*
 

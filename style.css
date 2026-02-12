@@ -51,6 +51,32 @@ body {
   max-width: 420px;
 }
 
+.epk-link {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.epk-link a {
+  color: #7a7a7a;
+}
+
+.epk-link a:hover {
+  color: #e0e0e0;
+}
+
+.back-link {
+  margin: 0 0 1.5rem;
+  font-size: 0.9rem;
+}
+
+.back-link a {
+  color: #7a7a7a;
+}
+
+.back-link a:hover {
+  color: #e0e0e0;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
