@@ -135,6 +135,27 @@ body {
   margin: 0 0.35rem;
 }
 
+.email-signup {
+  margin: 6rem auto;
+  max-width: 500px;
+  text-align: center;
+}
+
+.email-signup input {
+  padding: 0.75rem;
+  width: 70%;
+  border: 1px solid #ccc;
+  background: transparent;
+  color: inherit;
+}
+
+.email-signup button {
+  padding: 0.75rem 1.2rem;
+  border: 1px solid #000;
+  background: transparent;
+  cursor: pointer;
+}
+
 @media (max-width: 700px) {
   .page {
     padding: 3rem 1.25rem;
@@ -183,6 +204,14 @@ body {
 
 .epk section {
   margin-bottom: 3rem;
+}
+
+.epk-photo {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  display: block;
+  margin-top: 0.5rem;
 }
 
 .epk h2 {
