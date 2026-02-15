@@ -137,7 +137,6 @@ body {
 
 .email-signup {
   margin: 6rem auto;
-  margin-left: calc(50% - 250px + 1.25rem);
   max-width: 500px;
   text-align: center;
 }
