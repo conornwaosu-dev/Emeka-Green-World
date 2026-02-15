@@ -136,14 +136,43 @@ body {
 }
 
 .email-signup {
-  margin: 6rem auto;
-  max-width: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 8rem 1.5rem;
   text-align: center;
 }
 
+.email-signup-inner {
+  width: 100%;
+  max-width: 36rem;
+  text-align: center;
+}
+
+.email-signup h2 {
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.email-signup p {
+  font-size: 1rem;
+  color: #737373;
+  margin-bottom: 2.5rem;
+}
+
+.email-signup form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
 .email-signup input {
-  padding: 0.75rem;
-  width: 70%;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  max-width: 20rem;
   border: 1px solid #ccc;
   background: transparent;
   color: inherit;
@@ -154,6 +183,16 @@ body {
   border: 1px solid #000;
   background: transparent;
   cursor: pointer;
+}
+
+@media (min-width: 640px) {
+  .email-signup form {
+    flex-direction: row;
+  }
+  .email-signup input {
+    width: auto;
+    min-width: 14rem;
+  }
 }
 
 @media (max-width: 700px) {
