@@ -235,6 +235,17 @@ body {
   padding: 0 1.5rem;
 }
 
+/* Hero image (pub) */
+.epk-hero {
+  margin-bottom: 2rem;
+}
+
+.epk-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .epk-cover {
   width: 100%;
   height: auto;
@@ -249,7 +260,33 @@ body {
 
 .epk .tagline {
   color: #666;
+  margin-bottom: 0.25rem;
+}
+
+.epk .location {
+  color: #555;
+  font-size: 0.95rem;
   margin-bottom: 3rem;
+}
+
+/* Dark portrait */
+.epk-portrait {
+  margin: 3rem 0;
+}
+
+.epk-portrait-img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  display: block;
+}
+
+/* FFO line */
+.epk .ffo {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 1rem;
+  font-style: italic;
 }
 
 .epk section {
