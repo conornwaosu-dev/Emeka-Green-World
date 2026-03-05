@@ -135,6 +135,19 @@ body {
   margin: 0 0.35rem;
 }
 
+.support {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.support a {
+  color: #9a9a9a;
+}
+
+.support a:hover {
+  color: #e0e0e0;
+}
+
 .email-signup {
   width: 100%;
   display: flex;
