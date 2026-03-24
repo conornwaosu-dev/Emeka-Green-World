@@ -31,10 +31,10 @@ body {
 #play {
   background: none;
   border: none;
-  font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
-  font-weight: 700;
-  font-size: 1.35rem;
-  letter-spacing: 0.03em;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1.4rem;
+  letter-spacing: normal;
   color: #7a7a7a;
   cursor: pointer;
   margin-bottom: 2rem;

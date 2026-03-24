@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emeka Green</title>
+  <meta name="description" content="Emeka Green — indie rock for people who never felt like they belonged." />
+  <link rel="stylesheet" href="landing.css" />
+</head>
+<body>
+  <div class="landing-bg" aria-hidden="true"></div>
+  <div class="landing-grain" aria-hidden="true"></div>
+
+  <main class="landing">
+    <div class="landing-main">
+      <header class="landing-hero landing-anim">
+        <h1>Emeka Green</h1>
+        <p class="tagline">For people who never felt like they belonged.</p>
+      </header>
+
+      <div class="landing-ctas">
+        <a
+          id="spotify-cta"
+          class="btn btn-primary landing-anim landing-anim-d1"
+          href="https://open.spotify.com/track/42VCmIMMMRxCYXSUjoKcUj?si=b37527d24def402a"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Listen to Levitating</a>
+
+        <div class="join-block landing-anim landing-anim-d2">
+          <form
+            class="join-form"
+            action="https://formspree.io/f/xjgedkbr"
+            method="POST"
+          >
+            <label class="visually-hidden" for="landing-email">Email</label>
+            <input
+              id="landing-email"
+              type="email"
+              name="email"
+              placeholder="Your email"
+              required
+              autocomplete="email"
+              inputmode="email"
+            />
+            <input type="hidden" name="_subject" value="Outsiders Club — QR landing" />
+            <input type="hidden" name="source" id="form-source" value="direct" />
+            <button type="submit" class="btn btn-secondary">Join the Outsiders Club</button>
+          </form>
+          <p class="join-subtext">Early songs, demos, voice notes</p>
+        </div>
+      </div>
+
+      <p class="identity landing-anim landing-anim-d3">Irish-Nigerian indie rock artist</p>
+
+      <footer class="landing-social landing-anim landing-anim-d4">
+        <a
+          data-outbound
+          href="https://www.instagram.com/emekagreen_/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Instagram</a>
+        <a
+          data-outbound
+          href="https://www.tiktok.com/@emekagreen"
+          target="_blank"
+          rel="noopener noreferrer"
+        >TikTok</a>
+      </footer>
+    </div>
+  </main>
+
+  <script src="landing.js" defer></script>
+</body>
+</html>
