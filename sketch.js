@@ -41,12 +41,12 @@ function setup() {
   function tryPlay() {
     if (song && song.isPlaying()) {
       song.pause();
-      playBtn.textContent = 'listen';
+      playBtn.textContent = 'Listen';
       return;
     }
     if (fallbackAudio && !fallbackAudio.paused) {
       fallbackAudio.pause();
-      playBtn.textContent = 'listen';
+      playBtn.textContent = 'Listen';
       return;
     }
     if (!isMobile && song && song.isLoaded()) {
@@ -57,7 +57,7 @@ function setup() {
       } catch (e) {}
       song.loop();
       started = true;
-      playBtn.textContent = 'pause';
+      playBtn.textContent = 'Pause';
       return;
     }
     if (fallbackAudio) {
@@ -66,20 +66,20 @@ function setup() {
       if (p && p.then) {
         p.then(function () {
           started = true;
-          playBtn.textContent = 'pause';
+          playBtn.textContent = 'Pause';
         }).catch(function () {
           playBtn.textContent = 'Tap to play';
         });
       } else {
         started = true;
-        playBtn.textContent = 'pause';
+        playBtn.textContent = 'Pause';
       }
       return;
     }
     if (song && song.isLoaded()) {
       song.loop();
       started = true;
-      playBtn.textContent = 'pause';
+      playBtn.textContent = 'Pause';
     }
   }
 
