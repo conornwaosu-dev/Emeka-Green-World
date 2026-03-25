@@ -67,11 +67,15 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: clamp(1rem, 4vw, 1.75rem);
   max-width: 22rem;
   margin: 0 auto;
   width: 100%;
+}
+
+.landing-center {
+  margin-top: 18vh;
 }
 
 .landing-hero {
@@ -92,6 +96,14 @@ body {
   line-height: 1.5;
   color: #a8a8ae;
   max-width: 20ch;
+}
+
+.tagline {
+  margin: 0;
+  font-size: clamp(0.95rem, 3.8vw, 1.05rem);
+  line-height: 1.5;
+  color: #a8a8ae;
+  max-width: 32ch;
 }
 
 .landing-ctas {
@@ -181,6 +193,13 @@ body {
   line-height: 1.4;
 }
 
+.landing-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 0.25rem;
+}
+
 .identity {
   margin: 0;
   font-size: 0.8rem;
@@ -191,25 +210,34 @@ body {
 
 .landing-social {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.85rem 1.5rem;
-  padding-top: 0.35rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.6rem;
 }
 
-.landing-social a {
+.social-link {
   display: inline-flex;
   align-items: center;
-  min-height: 48px;
-  font-size: 1.05rem;
-  font-weight: 500;
-  letter-spacing: 0.02em;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
   color: #b8b8c2;
   text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(8, 8, 12, 0.25);
 }
 
-.landing-social a:hover,
-.landing-social a:focus-visible {
-  color: #e8e8ee;
+.social-link svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.social-link:hover,
+.social-link:focus-visible {
+  color: #f2f2f4;
+  border-color: rgba(255, 255, 255, 0.35);
 }
 
 .visually-hidden {
@@ -288,6 +316,10 @@ body {
 
   .landing-hero {
     padding-top: 1.25rem;
+  }
+
+  .landing-center {
+    margin-top: 12vh;
   }
 
   .landing-ctas {
