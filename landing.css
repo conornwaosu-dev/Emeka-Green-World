@@ -72,7 +72,7 @@ body {
   max-width: 22rem;
   margin: 0 auto;
   width: 100%;
-  padding-top: 10vh;
+  padding-top: 20vh;
 }
 
 .landing-center {
@@ -243,6 +243,8 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 999px;
+  filter: grayscale(1) brightness(0.72) contrast(1.15);
+  opacity: 0.92;
 }
 
 .social-link:hover,
@@ -319,7 +321,7 @@ body {
 
   .landing-main {
     gap: 0.65rem;
-    padding-top: 6vh;
+    padding-top: 10vh;
   }
 
   .landing-hero h1 {
