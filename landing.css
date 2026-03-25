@@ -75,7 +75,23 @@ body {
 }
 
 .landing-center {
-  margin-top: 18vh;
+  margin-top: 13vh;
+}
+
+.landing-social-top {
+  position: fixed;
+  z-index: 3;
+  top: 12vh;
+  left: 1.25rem;
+  right: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.landing-social-top .social-link {
+  pointer-events: auto;
 }
 
 .landing-hero {
@@ -208,13 +224,6 @@ body {
   color: #6e6e76;
 }
 
-.landing-social {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 0.6rem;
-}
-
 .social-link {
   display: inline-flex;
   align-items: center;
@@ -319,7 +328,7 @@ body {
   }
 
   .landing-center {
-    margin-top: 12vh;
+    margin-top: 10vh;
   }
 
   .landing-ctas {
