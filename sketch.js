@@ -4,10 +4,10 @@ let started = false;
 
 function preload() {
   song = loadSound(
-    'track.mp3',
-    function () { setSongTitle('Levitating'); },
+    'high-horse.mp3',
+    function () { setSongTitle('High Horse'); },
     function () {
-      song = loadSound('levitating.mp3', function () { setSongTitle('Levitating'); }, function () {});
+      song = loadSound('high-horse.mp3', function () { setSongTitle('High Horse'); }, function () {});
     }
   );
 }
@@ -25,7 +25,7 @@ function setup() {
   fft = new p5.FFT();
   if (song && song.isLoaded()) {
     fft.setInput(song);
-    setSongTitle('Levitating');
+    setSongTitle('High Horse');
   }
 
   for (let i = 0; i < 80; i++) {

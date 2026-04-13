@@ -151,6 +151,25 @@ body {
   color: #e0e0e0;
 }
 
+.previous-releases {
+  margin-top: 3rem;
+  max-width: 420px;
+}
+
+.previous-releases h3 {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #777;
+  margin-bottom: 0.75rem;
+}
+
+.previous-title {
+  font-size: 1rem;
+  color: #c0c0c0;
+}
+
 .email-signup {
   width: 100%;
   display: flex;
