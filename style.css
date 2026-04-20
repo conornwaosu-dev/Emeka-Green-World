@@ -211,6 +211,10 @@ body {
 .email-signup p {
   font-size: 1rem;
   color: #b8b8b8;
+  line-height: 1.7;
+  max-width: 28rem;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 2.5rem;
 }
 
