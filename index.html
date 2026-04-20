@@ -9,8 +9,6 @@
 
   <!-- p5 core -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
-  <!-- p5 sound -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
 </head>
 <body>
 
@@ -18,8 +16,6 @@
 
     <section class="hero">
       <img src="cover.jpg" alt="Emeka Green walking at night">
-      <audio id="audio-fallback" src="high-horse.mp3" loop style="display: none;"></audio>
-      <button id="play">Listen</button>
       <p class="statement">
         Music made from the soul, for outsiders who feel unseen.
       </p>
@@ -32,15 +28,16 @@
     </section>
 
     <section class="work">
-      <h2>High Horse</h2>
+      <h2>Listen early to High Horse</h2>
       <span class="year">2026</span>
       <p class="work-note">
-        New single. Raw, hurt and human.
+        For outsiders who feel too much and still keep going. Leave your email and I will send this first.
       </p>
-
-      <nav class="work-links">
-        <a href="high-horse.mp3" target="_blank">Listen early</a>
-      </nav>
+      <form class="early-access-form" action="https://formspree.io/f/xjgedkbr" method="POST">
+        <input type="email" name="email" placeholder="Your email" required>
+        <input type="hidden" name="_subject" value="High Horse early access signup">
+        <button type="submit">Get early access</button>
+      </form>
     </section>
 
     <section class="previous-releases">
@@ -59,7 +56,7 @@
     <section class="email-signup">
       <div class="email-signup-inner">
         <h2>Come closer.</h2>
-        <p>Acoustic versions and songs before they're released.</p>
+        <p>For outsiders. Acoustic versions, unreleased songs, and honest updates from the journey.</p>
         <form action="https://formspree.io/f/xjgedkbr" method="POST">
           <input type="email" name="email" placeholder="Your email" required>
           <input type="hidden" name="_subject" value="Newsletter signup from Emeka Green website">
