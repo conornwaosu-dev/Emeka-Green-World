@@ -65,7 +65,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .gallery img {
@@ -78,7 +78,7 @@ body {
 }
 
 .work {
-  margin-top: 4.5rem;
+  margin-top: 3rem;
   max-width: 420px;
 }
 
@@ -168,7 +168,7 @@ body {
 }
 
 .previous-releases {
-  margin-top: 3rem;
+  margin-top: 2rem;
   max-width: 420px;
 }
 
